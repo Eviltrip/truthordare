@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        .game-container {
+            margin-top: 50px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .truth {
+            background-color: #28a745;
+        }
+        .truth:hover {
+            background-color: #1e7e34;
+        }
+        .dare {
+            background-color: #dc3545;
+        }
+        .dare:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+<body>
+    <h1>Truth or Dare</h1>
+    <p>Pick a choice and have fun!</p>
+    <div class="game-container">
+        <button class="button truth" onclick="truth()">Truth</button>
+        <a href="sms:?body=I%20chose%20Dare!" class="button dare">Dare</a>
+    </div>
+    <script>
+        function truth() {
+            alert("Truth: What is your most embarrassing moment?");
+        }
+    </script>
+</body>
+</html>
